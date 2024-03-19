@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Mall</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .banner {
+            background-image: url('./images/Background-banner-1.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;          
+            
+        }
+
+        .info-box {
+            background-color: #1111;
+            padding: 10px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="row" >
+            <div class="shopping-mall" style="margin-top: 150px; margin-left: 17px;">
+                <h1>Shopping-Mall</h1>
+                <h4>The center point of the professional programing </h4>
+            </div>
+            <img src="b5.jpg" alt="" class="pull-right" width="51%">
+        </header>
+        <nav class="row" style="margin-left: 1px; margin-bottom: 20px;">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="bi bi-house-fill"></i></span>Trang chu <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-list-task"></i>Gioi thieu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-telephone"></i>Lien he</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-envelope-fill"></i>Gop y</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-question-circle"></i>Hoi dap</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-fill"></i>Tai khoan</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Dang nhap</a>
+                                <a class="dropdown-item" href="#">Quen mat khau</a>
+                                <a class="dropdown-item" href="#">Dang ky thanh vien</a>
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item" href="#">Dang Xuat</a>
+                                <a class="dropdown-item" href="#">Doi mat khau</a>
+                                <a class="dropdown-item" href="#">Cap nhat ho so</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Don hang</a>
+                                <a class="dropdown-item" href="#">Hang da mua</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" style="margin-left: 330px;">
+                        <a class="nav-link" href="#">English</a>
+                        <a class="nav-link" href="#">Tieng Viet</a>
+                    </form>
+                </div>
+            </nav>
+        </nav>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+            <div class="col-md-4 bd">
+                <div class="product-card">
+                    <img src="./img/608fc4f0-e1d2-4bca-8e5b-b903e5616286.jpg" alt="Product 1" class="img-fluid">
+                    <p>Product 1 Description</p>
+                    <button class="btn btn-primary">Chi tiết</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="./img/65bc84ee-4948-4372-9bef-9df9d9f48983.jpg" alt="Product 1" class="img-fluid">
+                    <p>Product 1 Description</p>
+                    <button class="btn btn-primary">Chi tiết</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="./img/d9b74968-e7f7-4ad7-8bbd-249c09a18680.jpg" alt="Product 1" class="img-fluid">
+                    <p>Product 1 Description</p>
+                    <button class="btn btn-primary">Chi tiết</button>
+                </div>
+            </div>
+        </div>
+        </div>
+            <!-- Add more product cards -->
+        
+
+            <aside class="col-md-3">
+                <div class="poly-cart" style="margin-bottom: 10px;">
+                    <div class="panel panel-default card">
+                        <div class="panel-body">
+                            <img style="margin-top: 10px;" src="b5.jpg" alt="" class="col-sm-12">
+                            <div class="col-sm-12">
+                                <ul style="text-align: center;">
+                                    <li>100 items</li>
+                                    <li>$16.4</li>
+                                    <li><a href="#">View Cart</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin-block: 10px;">
+                    <div class="panel-body">
+                        <form action="" method="post">
+                            <input placeholder="Keywords" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        <strong><i class="bi bi-list-task"></i> Danh muc</strong>
+                    </div>
+                    <div class="list-group">
+                        <a href="" class="list-group-item">Quan</a>
+                        <a href="" class="list-group-item">Ao</a>
+                        <a href="" class="list-group-item">Tui sach</a>
+                        <a href="" class="list-group-item">Phu kien</a>
+                        <a href="" class="list-group-item">Giay</a>
+                        <a href="" class="list-group-item">Balo</a>
+                    </div>
+                </div>
+            </aside>
+    </div>
+    </div>
+</body>
+</html>
