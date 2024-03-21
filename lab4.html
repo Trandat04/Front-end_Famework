@@ -15,25 +15,61 @@
         <script>
         var app=angular.module("myapp",[]);
         app.controller("myctrl", function($scope){
-           $scope.student = {
+           $scope.student = [{
             fullname: "Tran Cong A",
+            birthday: "16-04-2004",
             genger: "Nam",
-           };
+            photo: "a.jpg",
+            mark: 8.5,
+           },
+           {
+            fullname: "Tran Cong B",
+            birthday: "17-05-2004",
+            genger: "Nữ",
+            photo: "b.jpg",
+            mark: 8.5,
+           },
+           {
+            fullname: "Tran Cong C",
+            birthday: "15-03-2004",
+            genger: "Nam",
+            photo: "c.jpg",
+            mark: 8.5,
+           },
+        ];
         });
     </script>
     <table class="table">
         <thead>
             <tr>
+                <th>Avatar</th>
                 <th>Ho ten</th>
+                <th>Ngày sinh</th>
                 <th>Gioi tinh</th>
-                <th>Action</th>
+                <th>Điểm</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td scope="row">{{student.fullname}}</td>
-                <td>{{student.genger}}</td>
-                <td></td>
+                <td><img width="100px" height="100px" src="img/{{student[0].photo}}" alt=""></td>
+                <td scope="row">{{student[0].fullname}}</td>
+                <td>{{student[0].birthday}}</td>
+                <td>{{student[0].genger}}</td>
+                <td>{{student[0].mark}}</td>
+            </tr>
+            <tr>
+                <td><img width="100px" height="100px" src="img/{{student[1].photo}}" alt=""></td>
+                <td scope="row">{{student[1].fullname}}</td>
+                <td>{{student[1].birthday}}</td>
+                <td>{{student[1].genger}}</td>
+                <td>{{student[1].mark}}</td>
+            </tr>
+            <tr>
+                <td><img width="100px" height="100px" src="img/{{student[2].photo}}" alt=""></td>
+                <td scope="row">{{student[2].fullname}}</td>
+                <td>{{student[2].birthday}}</td>
+                <td>{{student[2].genger}}</td>
+                <td>{{student[2].mark}}</td>
             </tr>
         </tbody>
     </table>
